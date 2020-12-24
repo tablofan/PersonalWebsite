@@ -1,0 +1,33 @@
+#name {
+  color:#A8EBFF;
+  font-family: Verdana, sans-serif;
+  text-align: center;
+}
+
+#pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+#backgroundColour {
+  background-color: #2B2B2B;
+}
+
+#link {
+  /* color: blueviolet; */
+  color: burlywood;
+}
+
+.block {
+  color: antiquewhite;
+  font-family: monospace;
+  /* align-items: center; */
+  /* display: flex; */
+  /* position: relative; */
+  /* text-align: center; */
+  
+  padding-left: 20%;
+  padding-right: 20%;
+}
