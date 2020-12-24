@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<title>Project Idea</title>
+
+<body id="backgroundColour">
+
+<br>
+<br>
+  <h1 id="name">Project Idea</h1>
+
+
+  <div class="block">
+  <br>
+	<br>
+    <p>
+	As a new student studying my first online semester at RMIT, canvas has become a major part of my studying routine and experience. Due to my inexperience or possibly poor UI design, I have often felt lost when navigating. Hence, the IT project that I have chosen will be a chatbot for students on RMIT canvas. The chatbot will contain common study related questions and possible problems that students could face when navigating canvas. The service itself will be run entirely on the Amazon Web Services framework.
+<br>
+<br>
+Motivation for choosing this project came after my personal struggle when navigating canvas in the first 2 weeks of the semester. As canvas is open source, this chatbot could possibly help future new students on their studying journey. I also wanted to do something that could be run on AWS as I would gain valuable hands on experience architecting and designing cloud applications. While I realise that chatbots are neither new nor original, I believe the addition of a chatbot would be an improvement to the RMIT canvas user experience.
+<br>
+<br>
+A chatbot is a program that is powered by AI which simulates real life interactions through a chat interface. Chatbots are primarily based on machine learning, and hence can understand full sentences and questions (Introduction to Chatbot | Artificial Intelligence Chatbot Tutorial, 2020). This means that chatbots can become smarter over time, as they interact with more and more users. This is different from an internal site search function, which utilizes a pre listed index and a static pool of results.
+The main feature of this chatbot would be to provide the user with answers and relevant information based on the input. This could include information to questions such as “What classes do I have today?, “What due dates are coming up?”, or even non study related questions such as “What came first? The chicken or the egg”.
+
+<br>
+<br>
+
+
+
+There are many ways to design and implement chatbots on the AWS Framework (Media and Peterson, 2020). The most efficient and cost-effective way would be to utilize Amazon Lex (Amazon Lex, 2020), and that is what this chatbot will be using. Lex is a service for building chat interfaces, and provides deep machine learning and speech recognition capabilities. Lex has support for many common programming languages, such as C# or Python (Amazon Lex, 2020). I will be using Python as that is what I’m most familiar with. Deployment of the Lex stack will be handled by AWS CloudFormation, a service which provides the ability to deploy infrastructure as code (AWS CloudFormation, 2020). The backend of the chat bot will be handled by AWS Lambda, a serverless computing service which allows code to be run without provisioning any servers (AWS Lambda, 2020). Lambda will be utilized to handle things such as state management, decision making trees, etc. Any text or input that the chatbot user enters will be run through Lambda, and it would invoke different code depending on the input.
+<br>
+<br>
+Another feature of the application would be text-to-speech. This allows the user to have any answers received to be read out to them. This feature would likely be a toggle, with it turned off by default. This feature would help users who have lower reading capabilities, as the answers returned on the chatbot can sometimes be very lengthy (Create a voice chatbot in python using NLTK, Speech Recognition, Google (text-to-speech)&…, 2020). Text-to-speech can be easily implemented using AWS Polly, Amazon’s text-to-speech service which also utilizes Lambda on the backend (Amazon Polly, 2020). The mp3 files which are generated to be played as speech are stored in Amazon S3 (Amazon Web Services, 2020), Amazon’s cloud simple storage service (Amazon Simple Storage Service (S3), 2020). Any information or metadata about the mp3 files in S3 will be stored in Amazon DynamoDB, a No-SQL key-value database (Amazon Web Services, 2020).
+<br>
+<br>
+The chatbot would normally be minimized in the bottom right corner of the page, and would be expanded into a chat interface once clicked. Ideally the chatbot would be present on every page, except when watching lectures/recordings on Collaborate Ultra. This would allow for high user accessibility and ease of access.
+<br>
+<br>
+As previously mentioned, the chatbot will be run entirely on the AWS framework. It will be fully serverless and utilize many of the services that AWS provides including AWS Lex, AWS Lambda, Amazon CloudFormation, AWS S3, Amazon DynamoDB, and AWS Polly. The Cloudformation template and Lambda code will be written in Python, while communication between AWS Lex and Lambda will be done in JSON. Any testing of the code will be done on either AWS CodeCommit/CodePipeline or Postman (Postman Tutorial, 2020). Data and analytics about the chatbot will be collected using Amazon CloudWatch.
+<br>
+<br>
+In order to complete this project, I would need to be reasonably familiar working with AWS services such as Lex and Lambda. In addition to this, I would need to be competent at Python, and be efficient at utilizing its numerous libraries. I would also require some basic knowledge of JSON, which I currently do not possess. I believe these skills are feasible for me to obtain in the near future. All of the AWS services listed above offer free tier service, with Lex offering a free 10,00 text requests per month and Lambda offering 1 million free compute requests per month (AWS Free Tier, 2020). Designing, architecting and deployment of the chatbot service would be completely free.
+<br>
+<br>
+The aim of this project is to provide an easy way for students to access information, while also reducing the learning curve associated with canvas. If this project is to come to fruition and be implemented into canvas, it would be a great addition to my portfolio and prove to future potential employers that I am capable of designing and implementing cloud based applications.
+
+   </p>
+       
+  </div>
+
+</body>
+
+</html>
